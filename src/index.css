@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-scale: 1;
+  }
+  
+  html {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', system-ui, -apple-system, sans-serif;
+    font-size: calc(16px * var(--font-scale, 1));
+    scroll-behavior: smooth;
+  }
+
+  /* High contrast mode overrides */
+  .high-contrast {
+    filter: contrast(1.25);
+  }
+
+  .high-contrast button {
+    border-width: 2px !important;
+  }
+}
+
+/* Accessible focus rings */
+:focus-visible {
+  outline: 3px solid #124B8A !important;
+  outline-offset: 3px !important;
+}
+
+/* Audio wave animation */
+@keyframes audioWave {
+  0%, 100% { height: 6px; }
+  50% { height: 22px; }
+}
+
+.animate-audio-1 {
+  animation: audioWave 1.2s infinite ease-in-out;
+}
+.animate-audio-2 {
+  animation: audioWave 1.2s infinite ease-in-out 0.2s;
+}
+.animate-audio-3 {
+  animation: audioWave 1.2s infinite ease-in-out 0.4s;
+}

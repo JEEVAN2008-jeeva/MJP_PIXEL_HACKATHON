@@ -1,0 +1,6 @@
+{
+  "name": "Ayushman Bharat PM-JAY Senior Portal",
+  "description": "Accessible, senior-friendly, multilingual healthcare benefits portal for Ayushman Bharat PM-JAY supporting 10 Indian languages and voice assistance.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
